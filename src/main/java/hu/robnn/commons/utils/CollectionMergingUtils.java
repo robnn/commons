@@ -61,7 +61,7 @@ public class CollectionMergingUtils {
         TT merge(TS source, TT target, MapContext context);
     }
 
-    public <TS, TT> Collection<TT> mapCollection(final Collection<TS> sourceCollection, final Mapper<TS, TT> mapper,
+    public static <TS, TT> Collection<TT> mapCollection(final Collection<TS> sourceCollection, final Mapper<TS, TT> mapper,
                                    MapContext context,
     final Class<? extends Collection<TT>> targetCollectionClass) {
         Collection<TT> targetCollection;
